@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    >
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        />
+    <TextView
+        android:id="@+id/companyName"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAREER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/companyLogo"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/magenta" />
+    <TextView
+        android:id="@+id/career"
+        android:background="@drawable/border"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:text="We are always looking for people who want to work in an environment that fosters teamwork, communication, recognition, and excellence. Our performance- and team-based environment provides a strong foundation to build on the education, skills, experience, and interests you bring to our company."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_below="@id/companyName"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+        android:id="@+id/resume"
+        android:background="@drawable/border1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT YOUR RESUME HERE"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_below="@id/career"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/resume"
+        android:background="#2196F3"
+        android:id="@+id/hr"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hr"
+
+        android:elevation="100dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/Name1">
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/background"
+            android:hint="Name" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name1"
+        android:elevation="100dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/Mobile1">
+
+        <EditText
+            android:id="@+id/Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/background"
+            android:hint="Mobile" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mobile1"
+        android:elevation="100dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/EmailId1">
+
+        <EditText
+            android:id="@+id/EmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/background"
+            android:hint="Email" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailId1"
+        android:elevation="100dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/Company1">
+
+        <EditText
+            android:id="@+id/Company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/background"
+            android:hint="Company" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadResume"
+        android:layout_alignBottom="@+id/Company1"
+        android:layout_marginBottom="-63dp"
+        android:text="Upload Resume" />
+
+
+
+</RelativeLayout>
+
+
